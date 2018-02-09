@@ -1,0 +1,115 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lists Manager</title>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/extern/materialize.min.css" />
+	<link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+	<nav class="indigo darken-2" role="navigation">
+		<section class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">
+				Lists Manager
+			</a>
+		</section>
+	</nav>
+
+	<main class="section no-pad-bot" id="index-banner">
+
+		<!-- GLOBAL -->
+		<section class="container" id="global">
+			<article class="input-field col s12">
+				<input class="center-align" type="text" id="global_input" />
+				<label class="active" for="global_input">Global input</label>
+
+				<!--Suggestions -->
+				<ul class="collection center-align" id="global_suggestions">
+					<li class="collection-item">
+						<a href="#" id="global_to_home">Add to home list</a>
+					</li>
+					<li class="collection-item">
+						<a href="#" id="global_to_car">Add to car list</a>
+					</li>
+				</ul>
+			</article>
+
+			<article class="input-field col s12">
+				<button id="global_remove" class="btn waves-effect waves-light right" disabled>Remove
+					<i class="material-icons right">remove</i>
+				</button>
+				<button  id="global_add" class="btn waves-effect waves-light left" disabled>Add
+					<i class="material-icons right">add</i>
+				</button>
+			</article>
+		</section>
+
+		<!-- HOME -->
+		<section class="container" id="home">
+			<h2 class="header center indigo-text">Home list</h2>
+
+			<article class="row">
+				<section class="input-field col s12">
+					<input class="center-align" type="text" id="home_input" />
+					<label class="active" for="home_input">Home element</label>
+				</section>
+
+				<section class="input-field col s12">
+					<button id="home_remove" class="btn waves-effect waves-light right" disabled>Remove
+						<i class="material-icons right">remove</i>
+					</button>
+					<button  id="home_add" class="btn waves-effect waves-light left" disabled>Add
+						<i class="material-icons right">add</i>
+					</button>
+				</section>
+			</article>
+
+			<ul class="collection center-align" id="home_list"></ul>
+
+		</section>
+
+		<!-- CAR -->
+		<section class="container" id="car">
+			<h2 class="header center indigo-text">Car list</h2>
+
+			<article class="row">
+				<section class="input-field col s12">
+					<input class="center-align" type="text" id="car_input" />
+					<label class="active" for="car_input">Car element</label>
+				</section>
+
+				<section class="input-field col s12">
+					<button id="car_remove" class="btn waves-effect waves-light right" disabled>Remove
+						<i class="material-icons right">remove</i>
+					</button>
+					<button  id="car_add" class="btn waves-effect waves-light left" disabled>Add
+						<i class="material-icons right">add</i>
+					</button>
+				</section>
+			</article>
+
+			<ul class="collection center-align" id="car_list"></ul>
+
+		</section>
+
+	</main>
+
+	<footer class="page-footer indigo darken-2">
+		<section class="footer-copyright">
+			<article class="container">
+				&copy; 2018 Hariton Andrei Marius.
+			</article>
+		</section>
+	</footer>
+
+	<script src="js/extern/jquery-3.3.1.min.js"></script>
+	<script src="js/extern/materialize.min.js"></script>
+	<script src="js/variables/basic.js"></script>
+	<script src="js/functions/basic.js"></script>
+	<script src="js/events/basic.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

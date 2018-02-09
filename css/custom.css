@@ -1,0 +1,17 @@
+body
+{
+	background-color: #E8EAF6;
+}
+
+.brand-logo
+{
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+#global_suggestions
+{
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
